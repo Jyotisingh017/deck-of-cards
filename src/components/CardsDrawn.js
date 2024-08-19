@@ -11,7 +11,8 @@ const CardsDrawn = () => {
     <Box className="deck-layout">
       {drawnCards.map((card) => (
         <Card
-          id={`${card.id}-${card.name}`}
+          key={`${card.id}-${card.name}`}
+          role="drawn-cards"
           name={card.name}
           unicode={card.unicode}
           className={`text-xl ${

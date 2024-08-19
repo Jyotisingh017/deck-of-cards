@@ -11,7 +11,8 @@ const CardDeck = () => {
     <Box className="deck-layout" sx={{ marginTop: "4vw" }}>
       {cardDeck.map((card) => (
         <Card
-          id={`${card.id}-${card.name}`}
+          key={`${card.id}-${card.name}`}
+          role="deck-cards"
           name={card.name}
           unicode={card.unicode}
           onClick={() => drawCardHandler([...drawnCards, card])}

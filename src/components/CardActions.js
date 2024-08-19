@@ -21,6 +21,7 @@ const CardActions = () => {
   return (
     <Box sx={{ display: "inline-flex", justifyContent: "center", gap: "2vw" }}>
       <Button
+        role="shuffle"
         variant="outlined"
         onClick={shuffleCards}
         disabled={cardDeck.length <= 1}
@@ -28,6 +29,7 @@ const CardActions = () => {
         Shuffle
       </Button>
       <Button
+        role="sort"
         variant="outlined"
         onClick={sortCards}
         disabled={cardDeck.length <= 1}
@@ -35,6 +37,7 @@ const CardActions = () => {
         Sort
       </Button>
       <Button
+        role="sort-drawn"
         variant="outlined"
         onClick={sortDrawnCards}
         disabled={drawnCards.length <= 1}

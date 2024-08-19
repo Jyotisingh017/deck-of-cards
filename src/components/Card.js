@@ -1,6 +1,6 @@
-const Card = ({ id, className, unicode, onClick }) => {
+const Card = ({role,className, unicode, onClick }) => {
   return (
-    <button id={id} className={className} onClick={onClick}>
+    <button role={role} className={className} onClick={onClick}>
       {unicode}
     </button>
   );
