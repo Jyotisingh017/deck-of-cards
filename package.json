@@ -1,6 +1,7 @@
 {
   "name": "deck-of-cards",
   "version": "0.1.0",
+  "homepage": "https://Jyotisingh017.github.io/deck-of-cards",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -21,7 +22,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "prettier": "^3.3.3"
   }
 }
